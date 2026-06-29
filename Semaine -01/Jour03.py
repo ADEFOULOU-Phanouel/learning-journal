@@ -11,6 +11,6 @@ while compteur<5:
     print(f"compteur:{compteur}")
     compteur = compteur+1
 # Mini-défi
-n=int(input("entrez un nomre: "))
+n=int(input("Entrez un nombre: "))
 for i in range(1,11):
-    print(f"{n}*{i}={n*i}")
+    print(f"{n} x {i} = {n*i}")
