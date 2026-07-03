@@ -1,3 +1,4 @@
+"""
 # Exo dictionnaire
 amis=['Piérick','Mickael','Osée', 'Anselme']
 # Dictionnaire
@@ -21,3 +22,16 @@ print(f"somme:", somme)
 moy= int(somme/len(nombres))
 print(f"moy:",moy)
 print(f"max:",max(nombres))
+"""
+def mention(note):
+    if note>=16:
+        print("excellent")
+    elif note>=14:
+        print("bien")
+    elif note>=12:
+        print("Assez bien")
+    elif note>=10:
+        print("passable")
+    else:
+        print("Insuffissant")
+mention(15)
