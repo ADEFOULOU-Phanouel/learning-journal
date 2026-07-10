@@ -1,0 +1,5 @@
+Abomey Calavi : 15000 
+cotonou : 20000 
+porto-novo: 10000 
+Parakou: 7000 
+Ouidah : 3000

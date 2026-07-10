@@ -20,4 +20,4 @@ employee=[
 print(employee)
 for employe in employee:
     m=prime(employe['salaire'])
-    print(f"{employe['nom']} - {employe['departement']} - {m}")
+    print(f"{employe['nom']} - {employe ['departement']} - {m}")
