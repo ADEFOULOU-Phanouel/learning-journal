@@ -1,0 +1,7 @@
+chips : 25 
+farine de blée : 5 
+croquette pour chien: 40
+cloue : 30 
+machine a lavé : 02 
+biscuit : 20
+lessive : 50
