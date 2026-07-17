@@ -42,7 +42,7 @@ for magasine in data:
     print(magasine)
 with open("magasin.json", 'r') as f:
     for magasine in data:
-        if magasine['stock']>=0:
+        if magasine['stock']>= 0:
             print(f"{magasine['nom']}")
             
 big=max(magasin, key=lambda e:e['prix'])
