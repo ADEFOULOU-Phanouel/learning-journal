@@ -71,13 +71,13 @@ with open("employés.json", "r") as f:
     print(contenu)
 for ligne in contenu:
     print(ligne)
+
 with open("nom.txt", "w") as f:
-    f.write("nom : Phanouel \n"),
-    f.write("nom : lisa\n"),
-    f.write("nom : ella \n"),
-    f.write("nom : luc \n"),
-    f.write("nom : mael \n")
-print("fichier sauvegarder !")
+    for employé in employés:
+        f.write(f"{employé['nom']}\n")
+    print("fichier sauvegarder !")
+
+
 with open("nom.txt", "r") as f:
     data=f.read()
     print(data)
