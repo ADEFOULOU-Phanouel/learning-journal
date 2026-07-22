@@ -81,7 +81,7 @@ def est_disponible(stock):
 print(est_disponible(10))
 
 # appliquer_remise(prix, remise=5) → retourne le prix après remise en %
-def appliquer_remise(prix, remise=10):
+def appliquer_remise(prix, remise=5):
     remix = prix - (prix * remise) / 100
     return(remix)
 print(appliquer_remise(2000))
@@ -111,7 +111,7 @@ produits = [
 for produit in produits:
     print(produit)
 # Affiche seulement les produits disponibles
-    somme = 0
+somme = 0
 for produit in produits:
     somme += produit["prix"] * produit["stock"]
 print(f"Valeur totale du stock : {somme}")
@@ -138,7 +138,7 @@ print(f"{smole['nom']}:{smole['prix']}")
 somme=0
 for produit in produits:
     somme+=produit["prix"]
-    moy= somme/len(produits)
+moy= somme/len(produits)
 print(somme)
 print(moy)
 
