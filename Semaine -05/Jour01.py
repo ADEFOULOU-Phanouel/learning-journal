@@ -93,8 +93,10 @@ for note in  notes :
 
 with open("note_semaine5.txt", "w") as f:
    for note in notes:
-      f.write(f"{notes}/n")
+      f.write(f"{note}/n")
    print("fichier sauvegarder !")
+   
+   
 
 
 
