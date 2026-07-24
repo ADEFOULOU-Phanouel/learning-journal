@@ -9,36 +9,43 @@ print(reponse.status_code)
 # Récupéré les données en format JSON
 data = reponse.json()
 print(data)
+if 'error' in data:
+    print(f"Erreur API : {data['error']}")
+else:
+    print(f"selon cette API,le prénom {data['name']} a en moyenne {data['age']} ans") 
 
-print(f"selon cette API,le prénom {data['name']} a en moyenne {data['age']} ans") 
 
 
 # Mini - défi
 # pip install requests
-req = requests.get("https://api.genderize.io?name=phanouel")
+import requests
+req = requests.get("https://api.genderize.io?name=marc")
 print(req.status_code)
+data2 = req.json()
+print(data2)
+if 'error' in data2:
+    print(f"Erreur API: {data['error']}")
+else:
+    print(f"selon cette API, le prénom {data2['name']} est probablement {data2['gender']} avec une probabilité de {data2['probability']}")
+
+# Mini-défi 2
+#Importe requests
+import requests
+# Fait une requête sur l'API publique https://api.nationalize.io?name= + un prénom de ton choix
+avis= requests.get("https://api.nationalize.io?name=Phanouel")
+# Récupère les données en JSON avec .json()
+données = avis.json()
+print(données)
+# Affiche le prénom et la liste des pays probables (country) avec leur code pays (country_id) et leur probabilité (probability)
+for pays in données['country']:
+    if 'error' in data2:
+        print(f"Erreur API: {data['error']}")
+    else:
+        print(f"selon cette API, le prénom {données['name']} pourrait venir de {pays['country_id']} avec une probabilité de {pays['probability']}")
 
 
-# Exo
-import random
-import datetime
-import json
-commande = random.randint(1000,9999)
-print(commande)
-date = datetime.date.today()
-print(f"Aujourd'ui, nous somme le {date}")
-h= datetime.datetime.now()
-print(f"Il est actuellement {h.hour} heure:{h.minute} minutes:{h.second} secondes")
-m= datetime.date(date.year,12,31)
-jour_restant = (m-date).days
-print(f"Le nombre de jour restant avant la fin de cette année est de {jour_restant}  jour")
 
-try:
-    prix = int(input("entrez un prix: "))
-    quantité = int(input("entrez une quantité: "))
-    result = prix * quantité
-    print(quantité)
-except ZeroDivisionError:
-    print("Erreur ! division impossible")
-except ValueError:
-    print("Erreur ! entrez u nombre entier")
+
+
+
+
