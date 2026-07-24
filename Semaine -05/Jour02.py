@@ -202,5 +202,7 @@ print(f"le nombre de jour restant avant noel est: {jour_restant} jour")
 print(os.path.exists("sauvegardes/"))# true or false
 os.makedirs("sauvegardes/", exist_ok=True)
 print("dossier créer !")
-print(os.path.exists("sauvegardes/"))# true or false
+print(os.path.exists("sauvegardes/"))# true or false    
+
+ 
 
