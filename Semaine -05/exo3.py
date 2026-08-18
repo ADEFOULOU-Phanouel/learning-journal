@@ -74,7 +74,7 @@ medicaments = [
     crer_medicament("metformine",3000,1000,)
 ]
 
-with open("medicaments.json", "w") as f:
+with open("medicaments.json", "w")  as f:
     json.dump(medicaments,f)
 print("fichier sauvegarder !")
 
