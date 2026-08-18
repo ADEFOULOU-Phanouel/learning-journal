@@ -1,0 +1,4 @@
+[{'nom': 'jean', 'note': 2, 'age': 20, 'code_étudiant': 3736}, {'nom': 'jacques', 'note': 19, 'age': 21, 'code_étudiant': 6283}, {'nom': 'anne', 'note': 18, 'age': 25, 'code_étudiant': 6551}, {'nom': 'fidèle', 'note': 3, 'age': 24, 'code_étudiant': 4312}, {'nom': 'eric', 'note': 13, 'age': 23, 'code_étudiant': 8828}]
+11.0
+{'nom': 'jacques', 'note': 19, 'age': 21, 'code_étudiant': 6283} and {'nom': 'jean', 'note': 2, 'age': 20, 'code_étudiant': 3736}
+2026-08-18 et 2026-08-18 15:26:32.829993
