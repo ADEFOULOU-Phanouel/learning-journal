@@ -6,7 +6,7 @@ inventaires = [
     {"nom":"yaourt", "prix":500,"stock":300},
     {"nom":"clou", "prix":3000,"stock":500},
 ]
-with open("inventaire.json", "w") as f:
+with open("inventaires.json", "w") as f:
     json.dump(inventaires, f)
 print(" fichier json enrégistrer !")
 with open("inventaire.json", "r") as f:
@@ -33,13 +33,13 @@ def appliquer_remise(prix, remise=10):
     app = prix - (prix * remise)/100
     return(app)
 
-# partie 3: Listes de dictionnaires
+    # partie 3: Listes de dictionnaires
 produits = [
-    creer_produits("riz",2000),
-    creer_produits("Ordinateurs",80000,800),
-    creer_produits("chips",2000, 300),
-    creer_produits("pneu",7000, 10),
-    creer_produits("farine",10000)
+ creer_produits("riz",2000),
+ creer_produits("Ordinateurs",80000,800),
+creer_produits("chips",2000, 300),
+ creer_produits("pneu",7000, 10),
+creer_produits("farine",10000)
 ]
 for produit in produits:
     print(f"produit:{produit}")
@@ -47,12 +47,12 @@ for produit in produits:
 for produit in produits:
     m = est_disponible(produit['stock'])
     print(f"{produit['nom']} : {m}")
-big = max(produits, key=lambda e:e['prix'])
+    big = max(produits, key=lambda e:e['prix'])
 print(f"{big['nom']}:{big['prix']}")
 somme = 0
 for produit in produits:
     somme += produit['prix']
-print(f"valeur total du stock:{somme}")
+    print(f"valeur total du stock:{somme}")
 
 # partie 4: Module math, random et datetime
 import math
@@ -74,7 +74,9 @@ print(f"la racine carrée du code de commande est: {math.sqrt(code)}")
 # partie 5: API avec request
 import requests
 import json
+import math
 requete = requests.get("https://api.agify.io?name=phanouel")
+        
 data = requete.json()
 if 'error' in data:
     print(f"Erreur API : {data['error']}") 
