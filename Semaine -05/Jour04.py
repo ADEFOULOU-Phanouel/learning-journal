@@ -7,7 +7,6 @@ for nom in noms:
     age = random.randint(15,25)
     code_etudiant = random.randint(1000,9999)
     etudiants.append({"nom":nom, "note":note, "age":age, "code_étudiant":code_etudiant})
-    print(etudiants)
 for etudiant in etudiants:
     print(etudiant)
 import math
@@ -15,7 +14,7 @@ somme = 0
 moyenne = 0
 for etudiant in etudiants:
     somme += etudiant['note']
-    moyenne = somme / len(etudiants)
+moyenne = somme / len(etudiants)
 print(f"somme:{somme}")
 print(f"moyenne: {moyenne}")
 moyenne = round(moyenne, 2)
