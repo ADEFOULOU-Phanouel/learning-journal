@@ -38,7 +38,7 @@ class Produit:
         self.prix = prix
         self.stock = stock
         
-    def est_disponible(self):
+    def est_disponible(self): 
         if self.stock>0:
             return True
         else:
