@@ -1,0 +1,20 @@
+[
+  {
+    "nom": "sarah",
+    "age": 18,
+    "chambre": "A2",
+    "duree_sejour": 9
+  },
+  {
+    "nom": "jean",
+    "age": 21,
+    "chambre": "G1",
+    "duree_sejour": 3
+  },
+  {
+    "nom": "anna",
+    "age": 23,
+    "chambre": "O7",
+    "duree_sejour": 12
+  }
+]

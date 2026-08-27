@@ -81,9 +81,10 @@ clinique.ajouter_patient(p3)
 clinique.ajouter_medecin(m1)
 clinique.ajouter_medecin(m2)
 clinique.afficher_rapport()
-print(clinique.nombre_patients())
+print(clinique.nombre_patients())   
 print(m1.calculer_prime())
 print(m2.calculer_prime())
+
 
 
 
@@ -99,7 +100,7 @@ numéro_dossier = random.randint(1000,9999)
 print(f"numéro de dossier : {numéro_dossier}")
 import os
 os.makedirs("rapport_clinique/", exist_ok=True)
-print("Dossier créer !")
+print("Dossier créer !")   
 
 
      
