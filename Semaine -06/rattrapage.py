@@ -59,7 +59,7 @@ class Hotel:
             print(f"{e.nom}:{e.poste}:{e.salaire}")
             
     def nombre_clients(self):
-        print(f"nombre de clients:{len(self.liste_client)}")
+        return(len(self.liste_client))
         
 c1 = Client("sarah",18, "A2", 9)
 c2 = Client("jean",21, "G1", 3)
@@ -92,6 +92,7 @@ hotel.ajouter_employes(m1)
 m2.se_presenter()
 m2.travailler()
 print(m2.calculer_prime())
+print(hotel.nombre_clients())
     
 hotel.ajouter_employes(m2)
 hotel.afficher_rapport()
