@@ -1,5 +1,5 @@
 # Mon premier script python
-# Afficer du texte
+# Afficher du texte
 print('Bonjour je commence python!')
 
 # Variables
