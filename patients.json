@@ -1,0 +1,20 @@
+[
+  {
+    "nom": "awa",
+    "age": 20,
+    "maladie": "cancer",
+    "chambre": "A2"
+  },
+  {
+    "nom": "marc",
+    "age": 23,
+    "maladie": "Grippe",
+    "chambre": "G5"
+  },
+  {
+    "nom": "anna",
+    "age": 18,
+    "maladie": "Paludisme",
+    "chambre": "I4"
+  }
+]
