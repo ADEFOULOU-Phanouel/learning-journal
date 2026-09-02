@@ -59,7 +59,7 @@ class Hotel:
             print(f"{e.nom}:{e.poste}:{e.salaire}")
             
     def nombre_clients(self):
-        print(f"nombre de clients:{len(self.liste_client)}")
+        return(len(self.liste_client))
         
 c1 = Client("sarah",18, "A2", 9)
 c2 = Client("jean",21, "G1", 3)
@@ -95,6 +95,7 @@ print(m2.calculer_prime())
     
 hotel.ajouter_employes(m2)
 hotel.afficher_rapport()
+print(hotel.nombre_clients())
 import json
 with open("client.json","w") as f:
     json.dump([vars(p) for p in hotel.liste_client], f, ensure_ascii=False, indent=2)
