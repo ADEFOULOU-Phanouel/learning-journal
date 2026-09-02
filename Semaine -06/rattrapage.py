@@ -92,6 +92,7 @@ hotel.ajouter_employes(m1)
 m2.se_presenter()
 m2.travailler()
 print(m2.calculer_prime())
+print(hotel.nombre_clients())
     
 hotel.ajouter_employes(m2)
 hotel.afficher_rapport()
