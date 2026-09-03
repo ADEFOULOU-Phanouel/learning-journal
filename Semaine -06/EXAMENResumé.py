@@ -266,7 +266,7 @@ print("dossier crer !")
 # Partie 7: Gestion des erreurs
 try:
     note = int(input("entrez une note: "))
-    if note > 20:
+    if note > 20 or note < 0:
         print("note impossible ! entre 0 et 20")
     else:
         print(f"{calculer_mention(note)}")
