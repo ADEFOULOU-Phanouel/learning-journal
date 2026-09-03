@@ -110,7 +110,7 @@ class Professeur(Personne):
         return (result)
     
 class Universite:
-    def __init__(self, nom, age, ):
+    def __init__(self, nom ):
         self.etudiant = []
         self.professeur = []
         
@@ -120,7 +120,7 @@ class Universite:
         
     def ajouter_professeur(self, professeur):
         self.professeur.append(professeur)
-        print(f"Professeur ajouter. professeur : {self.professeur}")
+        print(f"Professeur ajouter. professeur : {professeur.nom}")
         
     def afficher_raapport(self):
         print("---Etudiant---")
@@ -169,7 +169,7 @@ print(e3.est_admis())
 p1 = Professeur("Ina", 30, "algorithmique", 2000000)
 p2 = Professeur("gilles", 28, "Logique informatique", 3000000)
 
-universite = Universite("Université générale", 20000)
+universite = Universite("Université générale"   )
 e2.ajouter_note(18)
 e2.ajouter_note(16)
 e2.ajouter_note(19)
@@ -228,7 +228,7 @@ etudiants=[
     {"nom":"anabelle","age":15,"note":15}
 ]
 with open ("etudiants.json", "w") as f:
-    json.dump(etudiants, f)
+    json.dump([vars(e) for e in universite.etudiant], f)
     print("fichier sauvegarder !")
 with open ("etudiants.json", "r") as f:
     data = json.load(f)
@@ -273,7 +273,6 @@ try:
 except ValueError:
     print("impossible! entrez un nombre")
 # Partie 8: API
-import requests
 import requests
 requete = requests.get("https://api.agify.io?name=phanouel")
 if requete.status_code == 200: 
