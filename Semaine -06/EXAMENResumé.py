@@ -111,6 +111,7 @@ class Professeur(Personne):
     
 class Universite:
     def __init__(self, nom ):
+        self.nom = nom
         self.etudiant = []
         self.professeur = []
         
@@ -236,8 +237,8 @@ with open ("etudiants.json", "r") as f:
         print(ligne) 
         
 with open ("nom.txt", "w") as f:
-    for etudiant in etudiants:
-        f.write(f"{etudiant['nom']}\n")
+    for etudiant in universite.etudiant:
+        f.write(f"{etudiant.nom}\n")
         print("nom sauvegarder !")
         
 with open ("nom.txt", "r") as f:
