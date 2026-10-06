@@ -59,7 +59,7 @@ class Hotel:
             print(f"{e.nom}:{e.poste}:{e.salaire}")
             
     def nombre_clients(self):
-        return(len(self.liste_client))
+        return(len(self.liste_client) )
         
 c1 = Client("sarah",18, "A2", 9)
 c2 = Client("jean",21, "G1", 3)
